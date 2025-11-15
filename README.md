@@ -41,7 +41,3 @@ Static Convert/
 ├── script.js       # Conversion logic and theme toggle
 └── README.md       # This file
 ```
-
-## License
-
-Free to use and modify for any purpose.
