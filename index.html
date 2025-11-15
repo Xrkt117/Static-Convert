@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter - Convert Images Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Image Converter</h1>
+            <p>Convert images between different formats instantly</p>
+        </header>
+
+        <main>
+            <div class="converter-box">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <h2>Drag & Drop your image here</h2>
+                        <p>or click to browse</p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                        <button class="browse-btn" id="browseBtn">Choose File</button>
+                        <p class="supported-formats">Supports: JPG, PNG, WebP, GIF, BMP, TIFF</p>
+                    </div>
+                </div>
+
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <div class="preview-container">
+                        <div class="preview-box">
+                            <h3>Original Image</h3>
+                            <div class="image-preview">
+                                <img id="originalPreview" alt="Original">
+                                <div class="image-info">
+                                    <span id="originalInfo"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preview-box">
+                            <h3>Converted Image</h3>
+                            <div class="image-preview">
+                                <img id="convertedPreview" alt="Converted">
+                                <div class="image-info">
+                                    <span id="convertedInfo"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="format-selector">
+                            <label for="formatSelect">Convert to:</label>
+                            <select id="formatSelect">
+                                <option value="image/jpeg">JPEG (JPG)</option>
+                                <option value="image/png">PNG</option>
+                                <option value="image/webp">WebP</option>
+                                <option value="image/gif">GIF</option>
+                                <option value="image/bmp">BMP</option>
+                            </select>
+                        </div>
+
+                        <div class="quality-control" id="qualityControl" style="display: none;">
+                            <label for="qualitySlider">Quality: <span id="qualityValue">90</span>%</label>
+                            <input type="range" id="qualitySlider" min="10" max="100" value="90">
+                        </div>
+
+                        <div class="button-group">
+                            <button class="btn btn-primary" id="convertBtn">Convert Image</button>
+                            <button class="btn btn-secondary" id="downloadBtn" style="display: none;">Download</button>
+                            <button class="btn btn-outline" id="resetBtn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Free online image converter - No uploads, all processing happens in your browser</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
