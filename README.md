@@ -18,17 +18,6 @@ A minimal, modern image converter with a clean black and white design. All proce
 - **Input**: JPG, PNG, WebP, GIF, BMP, TIFF
 - **Output**: JPG, PNG, WebP, GIF, BMP
 
-## How to Use
-
-1. **Open** `index.html` in your web browser
-2. **Upload** an image by:
-   - Clicking the upload area and selecting a file, or
-   - Dragging and dropping an image onto the upload area
-3. **Select** your desired output format from the dropdown
-4. **Adjust** quality (for JPEG/WebP) using the slider if needed
-5. **Click** "Convert Image" to process
-6. **Download** your converted image
-
 ## Browser Compatibility
 
 Works in all modern browsers that support:
@@ -56,4 +45,3 @@ Static Convert/
 ## License
 
 Free to use and modify for any purpose.
-
